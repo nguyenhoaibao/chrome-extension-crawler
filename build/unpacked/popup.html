@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			#wrapper {
+				width: 460px;
+			}
+
+			#keywords {
+				width: 390px;
+			}
+
+			#custom-search-url {
+				width: 382px;
+			}
+
+			#limit {
+				width: 350px;
+			}
+
+			#cms-topic-id {
+				width: 315px;
+			}
+
+			#search-url {
+				width: 392px;
+			}
+
+			.action-btn {
+				left: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<label for="keywords">
+				Keywords <input type="text" id="keywords" placeholder="Keywords" />
+			</label>
+			<br /><br />
+			<label>
+				Limit
+				<input type="text" id="limit" placeholder="0" />
+				<select id="limit-type">
+					<option value="scroll">Scroll</option>
+					<option value="post">Post</option>
+					<option value="day">Day</option>
+					<option value="month">Month</option>
+				</select>
+			</label>
+			<br /><br />
+
+			<div id="search-url-wrapper">
+				<label for="search-url">
+					Search Url
+					<select id="search-url">
+						<option value="top-post" selected>Top Posts</option>
+					</select>
+
+					<!-- Search Url <input type="text" id="search-url" placeholder="https://www.facebook.com/search/str/{{keyword}}/stories-keyword/intersect/stories-live" /> -->
+				</label>
+				<br /><br />
+			</div>
+
+			<div id="date-posted-wrapper" style="display: inline;">
+				<label>Date Posted</label>
+			</div>
+
+			<div id="custom-date-posted-wrapper" style="display: none;">
+				<label for="custom-date-posted">
+					Date Posted <input type="text" id="custom-date-posted" placeholder="2016-09" />
+				</label>
+
+				<br /><br />
+			</div>
+
+			<label>
+				Pause in <input type="text" id="pause-time" placeholder="0" />
+				seconds per scroll
+				<br />
+				(0 means that this will be calculated dynamically by total posts)
+			</label>
+
+			<br /><br />
+
+			<label for="use-custom-date-posted">
+				<input type="checkbox" id="use-custom-date-posted" /> Custom date posted
+			</label>
+
+			<br /><br />
+
+			<div class="action-btn">
+				<input type="button" value="Result Page" id="result-btn" />
+				<input type="button" value="Crawl Data" id="crawl-btn" />
+			</div>
+
+		</div>
+		<script src="jquery.min.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>

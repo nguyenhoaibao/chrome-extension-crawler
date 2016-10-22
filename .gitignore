@@ -1,0 +1,6 @@
+node_modules
+
+build/unpacked/app.js
+build/unpacked/background.js
+build/unpacked/popup.js
+build/unpacked/result.js

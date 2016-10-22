@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style media="screen">
+			table {
+				border-collapse: collapse;
+			}
+
+			table, th, td {
+ 				border: 1px solid black;
+			}
+
+			th {
+    		background-color: #4CAF50;
+    		color: white;
+			}
+
+			th, td {
+    		padding: 5px;
+    		text-align: left;
+			}
+
+			.export-result {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<button type="button" name="button" class="export-result">Save as CSV</button>
+		<span id="loading">Loading data...Please wait</span>
+		<span id="keywords"></span>
+		<br /><br />
+		<div>
+			<table>
+				<tr>
+					<th>#</th>
+					<th>Keyword</th>
+					<th>Poster Name</th>
+					<th>Poster Url</th>
+					<th>Date</th>
+					<th>Content</th>
+					<th>Image Url</th>
+					<th>Likes</th>
+					<th>Comments</th>
+					<th>Shares</th>
+					<th>Url</th>
+				</tr>
+				<tbody id="result"></tbody>
+			</table>
+		</div>
+		<br /><br />
+		<button type="button" name="button" class="export-result">Save as CSV</button>
+		<script src="result.js"></script>
+	</body>
+</html>
