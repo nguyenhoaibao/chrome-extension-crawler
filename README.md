@@ -1,4 +1,4 @@
-### Chrome Extension Crawler
+# Chrome Extension Crawler
 
 This is a Chrome extension used for crawling posts from many social sites (**currently only supported Facebook.com**)
 
